@@ -1,3 +1,17 @@
+# Copyright 2026 Province of British Columbia
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 
 #Description: Compare files available on TEI Distribution folders and EcoCat database
 #to prepare for removing GIS files from EcoCat that are already in TEI
@@ -28,20 +42,20 @@ library(stringr)
 #===========================================================================================
 ###Set working directory and output directory
 #===========================================================================================
-setwd("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison")
+setwd()
 
 #===========================================================================================
 ###Import data
 #===========================================================================================
 
 #Import TEI database summary
-TEIData <- read.csv("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison/path_report_2026-10-01_1517.csv")
+TEIData <- read.csv()
 
 #View TEI database summary
 TEIData %>% View('TEIData')
 
 #Import Ecocat database summary
-EcoCatData <- read.csv("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison/Jul9Doc_Rep_AllBAPID.csv")
+EcoCatData <- read.csv()
 
 #View Ecocat database summary
 EcoCatData %>% View('EcoCatData')
