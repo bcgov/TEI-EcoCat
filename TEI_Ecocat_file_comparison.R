@@ -1,6 +1,3 @@
-#Script name: TEI and Ecocat Comparison
-
-#Author: Alessandra Jones
 
 #Description: Compare files available on TEI Distribution folders and EcoCat database
 #to prepare for removing GIS files from EcoCat that are already in TEI
