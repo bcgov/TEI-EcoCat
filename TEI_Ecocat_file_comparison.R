@@ -26,8 +26,7 @@
 
 #Input requirements: Jul9Doc_Rep_AllBAPID.csv; path_report_2026-05-21_1252.csv
 
-#Output:
-
+#Output: TEI_EcoCat_file_comparison.csv
 #===========================================================================================
 ###Import and read packages
 #===========================================================================================
