@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-#Description: Compare files available on TEI Distribution folders and EcoCat database
+#Description: Inventory and compare files available on TEI Distribution folders and EcoCat database
 #to prepare for removing GIS files from EcoCat that are already in TEI
 
 #Flag any records where we have files in TEI Distribution folders that aren’t on EcoCat
