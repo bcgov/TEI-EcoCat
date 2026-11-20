@@ -590,24 +590,24 @@ comparison <- comparison %>% mutate(FileType = tolower(FileType))
 #Calculate file Status and spatial data fields based on conditions
 comparison <- comparison %>% mutate(
       Status = case_when(
-       #A. Flag EcoCat records where we have files that do not occur in TEI Distribution folders
+       #Flag EcoCat records where we have files that do not occur in TEI Distribution folders
        TEI_Count == 0 ~ "Only in EcoCat",
 
-       #B. Flag any records where we have files in TEI Distribution folders that aren’t on EcoCat
+       #Flag any records where we have files in TEI Distribution folders that aren’t on EcoCat
        EcoCat_Count == 0 ~ "Only in TEI",
        
-       #C. Flag any exact matches of file size, file type, and File Name
+       #Flag any exact matches of file size, file type, and File Name
        FileName_TEI == FileName_EcoCat & TEI_Count == EcoCat_Count ~ "Exact Match",
        
-       #D. Flag any matches of file size, file type and formatting removed File Name
+       #Flag any matches of file size, file type and formatting removed File Name
        TEI_Count == EcoCat_Count ~ "Formatting Match",
        
-       #E. Flag any records where file count differs between TEI and EcoCat
+       #Flag any records where file count differs between TEI and EcoCat
        TEI_Count != EcoCat_Count ~ "Count differs",
        
        TRUE ~ "Review"),
      
-       #F. Flag EcoCat records with spatial data (shapefiles, gdb or e00 files for example)
+       #Flag EcoCat records with spatial data (shapefiles, gdb or e00 files for example)
        File_Category = case_when(
           FileType %in% gis_extensions ~ "GIS",
           grepl("\\.gdb", FileName_Compare, ignore.case = TRUE) ~ "GIS",
