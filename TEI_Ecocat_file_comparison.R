@@ -47,19 +47,19 @@ library(stringr)
 #===========================================================================================
 ###Set working directory and output directory
 #===========================================================================================
-setwd("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison/outputs")
+setwd("<shared_drive_path>")
 
 #===========================================================================================
 ###Import data
 #===========================================================================================
 #Import TEI database summary
-TEIData <- read.csv("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison/inputs/path_report_2026-10-01_1517.csv")
+TEIData <- read.csv("<shared_drive_path>/path_report_2026-10-01_1517.csv")
 
 #View TEI database summary
 #TEIData %>% View('TEIData')
 
 #Import Ecocat database summary
-EcoCatData <- read.csv("C:/Users/ALESJONE/OneDrive - Government of BC/Documents/Ecology Projects/TEI_Ecocat File comparison/inputs/Jul9Doc_Rep_AllBAPID.csv")
+EcoCatData <- read.csv("<shared_drive_path>/Jul9Doc_Rep_AllBAPID.csv")
 
 #View Ecocat database summary
 #EcoCatData %>% View('EcoCatData')
